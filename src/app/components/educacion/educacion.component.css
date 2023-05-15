@@ -1,0 +1,40 @@
+.row{
+    padding: 20px;
+}
+div{
+    background: #000000;
+}
+
+h1, h3,h2{
+    display: inline;
+    color: aliceblue;
+}
+
+h2, h3 {
+    font-size: 20px;
+}
+
+.boton {
+    display: inline-block;
+  /*padding: 10px 20px;*/
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #4CAF50;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #02ea0e;
+
+}
+
+.boton:active {
+    background-color: #398439;
+
+}

@@ -1,0 +1,95 @@
+.row{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+
+}
+.contenedor{
+    width: auto;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+.img-proyecto{
+    box-shadow: 10px 10px 5px #7713e1;
+    
+    
+}
+
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img {
+    width: 100px;
+    flex-flow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+.parte3 {
+    display: inline-flex;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: solid 5px #24f615;
+    padding-bottom: 10px;
+    margin: auto;
+    background: #fafafa;
+  }
+  input[type=textfield] {
+      width: 75%;
+      padding: 16px 32px;
+      font-size: 16px;
+      margin: 8px 0;
+      border: 1px solid silver;
+      border-radius: 1px;
+      text-align: left;
+      color: #333;
+      background: #ccc;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+      background-color: #4CAF50;
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 16px 32px;
+      font-size: 16px;
+      min-width: 21%;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #333;
+  }
+
+  p {
+    color: aliceblue;
+  }
+
+  .titu {
+    color: rgb(0, 0, 0);
+  }

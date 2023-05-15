@@ -1,0 +1,193 @@
+<div class="row">
+    <h1>Hard & Soft Skills</h1>
+    <div class="col-lg-2">
+        <button type="button" routerLink="/newskill" class="btn btn-dark boton" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+    
+    
+    
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+      <circle-progress
+           [percent]="(skill.porcentaje)"
+           [radius]="100"
+           [title]="'HTML'"
+           [imageSrc]="''"
+           [showImage]="false"
+           [title]="(skill.nombre)"
+           [titleColor]="'aliceblue'"
+           [titleFontSize]="'40px'"
+           [showTitle]="true"
+           [imageHeight]="115"
+           [imageWidth]="115"
+           [showUnits]="false"
+           [showSubtitle]="false"
+           [outerStrokeWidth]="16"
+           [innerStrokeWidth]="8"
+           [outerStrokeColor]="'#78C000'"
+           [innerStrokeColor]="'#C7E596'"
+           [animation]="true"
+           [animationDuration]="800"
+        ></circle-progress>
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-outline-success" routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil"></i>EDITAR</button>
+            </td>    
+            <td *ngIf="isLogged">
+                <button class="btn btn-outline-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash-fill"></i>BORRAR</button>
+            </td>
+        </div>
+
+        
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress
+           [percent]="60"
+           [radius]="100"
+           [title]="'HTML'"
+           [imageSrc]="'../assets/grupal/html.png'"
+           [showImage]="true"
+           [imageHeight]="115"
+           [imageWidth]="115"
+           [showUnits]="false"
+           [showSubtitle]="false"
+           [outerStrokeWidth]="16"
+           [innerStrokeWidth]="8"
+           [outerStrokeColor]="'#78C000'"
+           [innerStrokeColor]="'#C7E596'"
+           [animation]="true"
+           [animationDuration]="800"
+        ></circle-progress>
+</div> 
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+         [percent]="20"
+         [radius]="100"
+         [title]="'JS'"
+         [imageSrc]="'../assets/grupal/js.png'"
+         [showImage]="true"
+         [imageHeight]="115"
+         [imageWidth]="115"
+         [showUnits]="false"
+         [showSubtitle]="false"
+         [outerStrokeWidth]="16"
+         [innerStrokeWidth]="8"
+         [outerStrokeColor]="'#78C000'"
+         [innerStrokeColor]="'#C7E596'"
+         [animation]="true"
+         [animationDuration]="800"
+      ></circle-progress>
+</div>
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+         [percent]="45"
+         [radius]="100"
+         [title]="'CSS'"
+         [imageSrc]="'../assets/grupal/css26.png'"
+         [showImage]="true"
+         [imageHeight]="115"
+         [imageWidth]="115"
+         [showUnits]="false"
+         [showSubtitle]="false"
+         [outerStrokeWidth]="16"
+         [innerStrokeWidth]="8"
+         [outerStrokeColor]="'#78C000'"
+         [innerStrokeColor]="'#C7E596'"
+         [animation]="true"
+         [animationDuration]="800"
+      ></circle-progress>
+</div>
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+         [percent]="30"
+         [radius]="100"
+         [title]="'Ingles'"
+         [imageSrc]="'../assets/grupal/eng.png'"
+         [showImage]="true"
+         [imageHeight]="115"
+         [imageWidth]="115"
+         [showUnits]="false"
+         [showSubtitle]="false"
+         [outerStrokeWidth]="16"
+         [innerStrokeWidth]="8"
+         [outerStrokeColor]="'#78C000'"
+         [innerStrokeColor]="'#C7E596'"
+         [animation]="true"
+         [animationDuration]="800"
+      ></circle-progress>
+</div>
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+         [percent]="55"
+         [radius]="100"
+         [title]="'GitHub'"
+         [imageSrc]="'../assets/grupal/git.png'"
+         [showImage]="true"
+         [imageHeight]="115"
+         [imageWidth]="115"
+         [showUnits]="false"
+         [showSubtitle]="false"
+         [outerStrokeWidth]="16"
+         [innerStrokeWidth]="8"
+         [outerStrokeColor]="'#78C000'"
+         [innerStrokeColor]="'#C7E596'"
+         [animation]="true"
+         [animationDuration]="800"
+      ></circle-progress>
+</div>
+<div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+         [percent]="30"
+         [radius]="100"
+         [title]="'Grupal'"
+         [imageSrc]="'../assets/grupal/grupal.png'"
+         [showImage]="true"
+         [imageHeight]="115"
+         [imageWidth]="115"
+         [showUnits]="false"
+         [showSubtitle]="false"
+         [outerStrokeWidth]="16"
+         [innerStrokeWidth]="8"
+         [outerStrokeColor]="'#78C000'"
+         [innerStrokeColor]="'#C7E596'"
+         [animation]="true"
+         [animationDuration]="800"
+      ></circle-progress>
+</div>  ---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

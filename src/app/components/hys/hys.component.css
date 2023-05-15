@@ -1,0 +1,40 @@
+.row{
+    background-color: #000000;
+    padding: 20px;
+
+}
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    color: aliceblue;
+}
+
+.boton {
+    display: inline-block;
+  /*padding: 10px 20px;*/
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #4CAF50;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #02ea0e;
+
+}
+
+.boton:active {
+    background-color: #398439;
+
+}
